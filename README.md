@@ -1,2 +1,2 @@
-# weatherlike-app
-This is an study using HG Weather API
+**Weatherlike-app**
+This is an study using Open Weather Map API
