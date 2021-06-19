@@ -33,7 +33,7 @@ h1 {
 
 .search-content {
     width: 552px;
-    margin-top: 25%;
+    margin-top: 5%;
     margin-left: 10%;
 }
 
@@ -83,17 +83,25 @@ h1 {
     overflow: hidden;
 }
 
-.card {
-    margin: 50% auto;
+.empty{
+    display: none;
+}
+
+.filled{
+    display: block;
     background: #E5E5E5;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.85);
     border-radius: 25px;
     width: 90%;
+    margin-top: 5%;
+    margin-left: 10%;
+    
 }
 
 
+
 .card-head {
-    background: #00258F;
+    background: #2451EF;
     border-radius: 24px 24px 0px 0px;
 }
 
@@ -129,12 +137,15 @@ h1 {
     flex-direction: row;
 }
 
-.temperature-number{
+.temperature-number,
+.temperature-number-wrap{
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
     line-height: 102.69%;
 }
+
+
 
 .temperature-city{
     font-style: normal;
@@ -167,11 +178,12 @@ h1 {
     line-height: 102.69%;
     }
 
+ 
 
 @media only screen and (min-width: 600px) {
-    .card {
-        margin: 20% auto;
-        width: 60%;
+    .filled {
+        margin: 5% auto;
+        width: 80%;
     }
     .temperature-city{
         font-size: 32px;
@@ -179,9 +191,9 @@ h1 {
 }
 
 @media only screen and (min-width: 1024px) {
-    .card {
-        margin: 15% auto;
-        width: 32%;
+    .filled {
+        margin: 5% auto;
+        width: 82%;
     }
 
     .card-head h2 {
