@@ -1,43 +1,43 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1{
-    font-size: 72px;   
+h1 {
+    font-size: 72px;
     font-weight: 700;
     line-height: 74px;
     margin: 5px 0;
 }
 
-#search-page{
+#search-page {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.col-50{
+.col-50 {
     width: 50%;
     height: 100vh;
 }
 
-.search-img{
+.search-img {
     width: 100%;
     object-fit: cover;
 }
 
-.search-content{
+.search-content {
     width: 552px;
     margin-top: 25%;
     margin-left: 10%;
 }
 
-.search-input{
+.search-input {
     border-radius: 25px;
     border: 2px solid gray;
     font-size: 21px;
@@ -47,11 +47,11 @@ h1{
     transition: 1s;
 }
 
-.search-input:focus-visible{
+.search-input:focus-visible {
     border: 2px solid #2451EF;
 }
 
-.search-btn{
+.search-btn {
     background-color: #2451EF;
     border-radius: 25px;
     border: 1px solid #2451EF;
@@ -66,7 +66,129 @@ h1{
     margin: 15px 0;
 }
 
-.search-btn:hover{
+.search-btn:hover {
     background-color: #133bce;
     border: 1px solid #133bce;
+}
+
+#result-page {
+    background: linear-gradient(180deg, rgba(11, 146, 243, 0) -2.99%, rgba(31, 94, 240, 0) 14.71%, rgba(36, 81, 239, 0) 38.31%, rgba(36, 81, 239, 0.486) 70.5%, rgba(0, 0, 0, 0.9) 100%),
+                url('/src/img/bg-city-result.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.card {
+    margin: 50% auto;
+    background: #E5E5E5;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.85);
+    border-radius: 25px;
+    width: 90%;
+}
+
+
+.card-head {
+    background: #00258F;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.card-head h2 {
+    color: #fff;
+    font-size: 1.6em;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-body{
+    padding: 30px;
+}
+
+.card-body-first--row{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.temperature-icon{
+    width: 70px;
+    height: 70px;
+    object-fit: cover; 
+    margin-right: 10px;
+}
+
+.temperature-result{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.temperature-number{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 102.69%;
+}
+
+.temperature-city{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 102.69%;
+}
+
+.card-body-second--row{
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 35px;
+}
+
+.min-max-item{
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90px;
+    margin: 10px 0 0 0;
+}
+
+.card-body-second--row p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 102.69%;
+    }
+
+
+@media only screen and (min-width: 600px) {
+    .card {
+        margin: 20% auto;
+        width: 60%;
+    }
+    .temperature-city{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .card {
+        margin: 15% auto;
+        width: 32%;
+    }
+
+    .card-head h2 {
+        font-size: 1.3em;
+    }
+
+    .temperature-city{
+        font-size: 32px;
+    }
 }
