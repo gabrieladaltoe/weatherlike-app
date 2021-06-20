@@ -9,7 +9,7 @@ const cityName = document.querySelector('.city-name');
 const minTemp = document.querySelector('.min-temp-number');
 const maxTemp = document.querySelector('.max-temp-number');
 const humidity = document.querySelector('.humidity-number');
-const icon = document.querySelector('.icon')
+const icon = document.querySelector('.temperature-icon')
 const card = document.querySelector('#card');
 
 const API_KEY = '708ed0fe5f20562cb2a25246aeb5e605'
@@ -24,19 +24,27 @@ button.addEventListener('click', function(e){
     .then(response => response.json())
     .then(data => {
 
+        const iconSrc = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${
+        data.weather[0]["icon"]
+      }.svg`;
+
+
+
         console.log(data)
+        console.log(icon)
         let nameValue = data['name'];
         let tempValue = data['main']['temp'];
         let minTempValue = data['main']['temp_min'];
         let maxTempValue = data['main']['temp_max'];
         let humidityValue = data['main']['humidity'];
-        let iconValue = data['weather'][0]['icon'];
+    
 
         temperature.innerHTML = Math.floor(tempValue)
         cityName.innerHTML = nameValue
         minTemp.innerHTML = Math.floor(minTempValue)
         maxTemp.innerHTML = Math.floor(maxTempValue)
         humidity.innerHTML = humidityValue
+        icon.src = iconSrc
 
         card.className = 'filled' 
 

@@ -8,10 +8,10 @@ body {
 }
 
 h1 {
-    font-size: 72px;
+    font-size: 2.3em;
     font-weight: 700;
-    line-height: 74px;
-    margin: 5px 0;
+    line-height: 42px;
+    margin: 18px 0;
 }
 
 #search-page {
@@ -22,19 +22,18 @@ h1 {
 }
 
 .col-50 {
-    width: 50%;
-    height: 100vh;
+    width: 100%;
 }
 
 .search-img {
     width: 100%;
+    height: 89px;
     object-fit: cover;
 }
 
 .search-content {
-    width: 552px;
-    margin-top: 5%;
-    margin-left: 10%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .search-input {
@@ -42,7 +41,7 @@ h1 {
     border: 2px solid gray;
     font-size: 21px;
     padding: 10px;
-    width: 300px;
+    width: 100%;
     margin: 15px 0;
     transition: 1s;
 }
@@ -60,7 +59,7 @@ h1 {
     font-size: 21px;
     font-weight: 700;
     padding: 10px;
-    width: 300px;
+    width: 100%;
     text-transform: uppercase;
     transition: 1s;
     margin: 15px 0;
@@ -90,12 +89,10 @@ h1 {
 .filled{
     display: block;
     background: #E5E5E5;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 85%);
     border-radius: 25px;
     width: 90%;
-    margin-top: 5%;
-    margin-left: 10%;
-    
+    margin: 5% auto;   
 }
 
 
@@ -120,7 +117,7 @@ h1 {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .temperature-icon{
@@ -152,6 +149,7 @@ h1 {
     font-weight: bold;
     font-size: 21px;
     line-height: 102.69%;
+    margin-top: 15px;
 }
 
 .card-body-second--row{
@@ -189,9 +187,16 @@ h1 {
     }
 
     .col-50 {
-        width: 100%;
+        width: 50%;
         height: 100vh;
     }
+    
+    .search-img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
 
     .filled {
         margin: 5% auto;
@@ -203,13 +208,35 @@ h1 {
 }
 
 @media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 4.3em;
+        font-weight: 700;
+        line-height: 71px;
+        margin: 25% 0 0 0;
+        letter-spacing: -3px;
+    }
+    
+    .col-50 {
+        width: 50%;
+        height: 100vh;
+    }
+
+    .search-content {
+            width: 60%;
+            margin: 0 auto 0 5%;
+    }
+
     .filled {
-        margin: 5% auto;
-        width: 82%;
+        width: 60%;
+        margin: 0 auto 0 5%;
     }
 
     .card-head h2 {
         font-size: 1.3em;
+    }
+
+    .card-body-first--row{
+        flex-direction: row;
     }
 
     .temperature-city{
