@@ -6,7 +6,7 @@
 </h1>
 
 <h4 align="center"> 
-	🚧  Weather App ☀️☔☁️ Deployed 🚀 🚧
+	🚧  Weather App ☀️☔☁️ Published 🚀 🚧
 </h4>
 
 <p align="center">
