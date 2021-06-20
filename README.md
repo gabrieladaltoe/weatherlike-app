@@ -10,10 +10,10 @@
 </h4>
 
 <p align="center">
- <a href="#-quick-start"> 👉 Quick Start </a> •
- <a href="#-Usage">👉 Usage</a> •
- <a href="#-technologies">👉 Technologies</a> • 
- <a href="#-author">👉 Author</a> • 
+ <a href="#-quick-start"> 👉 Quick Start </a>
+ <a href="#-Usage"> 👉 Usage</a>
+ <a href="#-Stacks"> 👉 Stacks</a>
+ <a href="#-author"> 👉 Author</a> 
 
 </p>
 
@@ -32,9 +32,9 @@ To run this application, you need to create your own account and get you API key
 ---
 
 
-## 🛠 Technologie
+## 🛠 Stacks
 
-This project was build with the following technology:
+This project was build with the following stack:
 
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
