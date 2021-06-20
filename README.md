@@ -52,9 +52,9 @@ This project was build with the following technology:
 
 ---
 
-## 📝 Licence
+## 📝 License
 
-This project has the licence from [MIT](./LICENSE).
+This project has the license from [MIT](./LICENSE).
 
 Made by ❤️ por Gabriela Fortuna 👋🏽 [Let's work together!](https://www.linkedin.com/in/gabrielafortuna/?locale=en_US)
 
